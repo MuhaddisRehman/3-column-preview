@@ -1,0 +1,17 @@
+<div ngClass="p-10" [attr.class]="class">
+  <svg class="w-3">
+    <use [attr.xlink:href]="iconType"></use>
+  </svg>
+  <div class="mb-5">
+    <h1 class="uppercase text-very-light-gray mb-2">{{ cardTitle }}</h1>
+    <p class="text-transparent-white">
+      {{ cardDescription }}
+    </p>
+  </div>
+  <button
+    ngClass="round border-none outline-none p-2 px-6 "
+    [attr.class]="buttonClass"
+  >
+    Learn More
+  </button>
+</div>

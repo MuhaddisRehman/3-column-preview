@@ -1,1 +1,11 @@
-<h1>Welcome to my portfolio</h1>
+<div class="bg-white p-5">
+  <ng-container *ngFor="let card of cards">
+    <app-card
+      [class]="card.class"
+      [iconType]="card.icon"
+      [cardTitle]="card.title"
+      [cardDescription]="card.description"
+      [buttonClass]="card.buttonClass"
+    ></app-card>
+  </ng-container>
+</div>
