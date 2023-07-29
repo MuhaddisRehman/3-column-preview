@@ -1,15 +1,17 @@
-<div ngClass="p-10" [attr.class]="class">
-  <svg class="w-3">
+<div ngClass="p-10 pt-0 card" [attr.class]="class">
+  <svg class="w-2 h-2 mb-5">
     <use [attr.xlink:href]="iconType"></use>
   </svg>
   <div class="mb-5">
-    <h1 class="uppercase text-very-light-gray mb-2">{{ cardTitle }}</h1>
-    <p class="text-transparent-white">
+    <h1 class="uppercase text-very-light-gray mb-6 font-family-big-shoulder">
+      {{ cardTitle }}
+    </h1>
+    <p class="text-transparent-white font-size-base">
       {{ cardDescription }}
     </p>
   </div>
   <button
-    ngClass="round border-none outline-none p-2 px-6 "
+    ngClass="round border-none outline-none p-2 px-8 cursor-pointer"
     [attr.class]="buttonClass"
   >
     Learn More

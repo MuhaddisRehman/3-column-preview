@@ -1,11 +1,13 @@
-<div class="bg-white p-5">
-  <ng-container *ngFor="let card of cards">
-    <app-card
-      [class]="card.class"
-      [iconType]="card.icon"
-      [cardTitle]="card.title"
-      [cardDescription]="card.description"
-      [buttonClass]="card.buttonClass"
-    ></app-card>
-  </ng-container>
+<div class="flex-box p-5 bg-very-light-gray h-100vh">
+  <div class="bg-white card-container">
+    <ng-container *ngFor="let card of cards">
+      <app-card
+        [class]="card.class"
+        [iconType]="card.icon"
+        [cardTitle]="card.title"
+        [cardDescription]="card.description"
+        [buttonClass]="card.buttonClass"
+      ></app-card>
+    </ng-container>
+  </div>
 </div>

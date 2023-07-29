@@ -1,4 +1,4 @@
-$margin-base: 10px; // Adjust the base margin value as needed
+$margin-base: 8px; // Adjust the base margin value as needed
 
 @for $i from 0 through 10 {
   $multiplier: $i * 0.25;
