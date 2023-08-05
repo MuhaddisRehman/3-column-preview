@@ -31,4 +31,9 @@ export class AppComponent {
       buttonClass:'text-very-dark-cyan '
     }
   ]
+ngOnInit():void{
+  console.log('====================================');
+  console.log(this.cards);
+  console.log('====================================');
+}
 }

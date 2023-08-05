@@ -2,21 +2,31 @@
   border-radius: 1rem;
   overflow: hidden;
   transition: all 0.3s ease;
+  // flex-wrap: wrap;
   @media screen and (min-width: 376px) {
     display: flex;
     // justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     * {
       flex-basis: 1;
     }
   }
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+    max-width: 90%;
+  }
 }
 .card {
-  @media screen and (min-width: 860px) {
-    max-width: 340px;
+  @media screen and (min-width: 760px) {
+    // max-width: 400px;
   }
-
+  h1 {
+    font-family: "Big Shoulders Display", cursive;
+  }
+  p {
+    font-family: "Lexend Deca", sans-serif;
+  }
   button {
     transition: all 0.3s ease !important;
 
